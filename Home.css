@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -15px;
+    
+    
+}
+.back{
+    /* opacity: 0.5; */
+    
+    z-index: -4;
+    position: absolute;
+    width: 100%;
+    height: 1010px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+   background-color: transparent;
+    
+    position: sticky !important;
+    top: 0px;
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+    margin: 10px 15px;
+    color: rgb(60, 60, 60);
+    text-shadow: 0.4px 0.4px 0.4px black;
+    font-size: 22px;
+    font-weight: bold;
+}
+li{
+    transition: transform 450ms;
+}
+li:hover{
+   transform: scale(1.08);
+}
+ul{
+    list-style: none;
+}
+marquee{
+    font-size: 20px;
+    font-family: fantasy;
+    margin-bottom: 10px;
+    margin: 5px 500px;
+   color: rgb(3, 88, 7);
+   padding: 10px 10px;
+}
+.blood{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    z-index: -1;
+    
+}
+.heading{
+    position: absolute;
+    top: 120px;
+    left:  1050px;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.search_blood_grp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search_blood_grp h1{
+    color: rgb(0, 71, 71);
+}
+#blood_grp{
+    padding: 20px 20px;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    border-radius: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input:hover{
+    background-color: rgb(0, 38, 95);
+    color: white;
+}
+
+.grp{
+    font-size: 20px;
+}
+form input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border: 3px solid rgb(0, 38, 95) ;
+    border-radius: 30px;
+    background: transparent;
+    color:rgb(0, 38, 95) ;
+    font-size: 15px;
+    font-style: bolder;
+}
+table{
+    width: 50%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    align-items: center;
+    transition: 450ms ease-out;
+    
+}
+td,th{
+    text-align: left;
+    padding: 8px 8px;
+    
+}
+tr:nth-child(even)
+{
+    background-color: #A8E7E9;
+}
+tr:nth-child(odd)
+{
+    background-color: #00ced1;
+}
+#error{
+    text-align: center;
+    
+    animation: fade 4s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        
+    }
+}
